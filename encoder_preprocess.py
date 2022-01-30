@@ -66,6 +66,7 @@ if __name__ == "__main__":
         "voxceleb2": preprocess_voxceleb2,
     }
     args = vars(args)
+    print(args)
     for dataset in args.pop("datasets"):
         print("Preprocessing %s" % dataset)
         preprocess_func[dataset](**args)
