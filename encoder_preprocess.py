@@ -61,6 +61,7 @@ if __name__ == "__main__":
     # Preprocess the datasets
     print_args(args, parser)
     preprocess_func = {
+        "Hindi_Dataset": preprocess_librispeech,
         "librispeech_other": preprocess_librispeech,
         "voxceleb1": preprocess_voxceleb1,
         "voxceleb2": preprocess_voxceleb2,
